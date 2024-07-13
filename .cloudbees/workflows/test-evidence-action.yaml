@@ -43,8 +43,4 @@ jobs:
             - _italics_
             - ~~strike through~~
 
-            <blockquote>
-            Block Quote
-            </blockquote>
-
             ![Sonny and Mariel high fiving.](https://content.codecademy.com/courses/learn-cpp/community-challenge/highfive.gif)
