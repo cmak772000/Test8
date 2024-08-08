@@ -13,6 +13,7 @@ on:
         description: a choice
       n1:
         type: number
+        default: 2
         description: a number
       s1:
         type: string
