@@ -18,6 +18,8 @@ on:
       s1:
         type: string
         description: a string
+      b1:
+        type: boolean
 jobs:
   build:
     steps:
