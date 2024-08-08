@@ -17,7 +17,6 @@ on:
         description: a number
       s1:
         type: string
-        required: true
         description: a string
 jobs:
   build:
