@@ -19,6 +19,7 @@ on:
       s1:
         type: string
         description: a string
+        default: hello
       b1:
         type: boolean
         default: false
