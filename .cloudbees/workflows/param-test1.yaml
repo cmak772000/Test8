@@ -10,6 +10,7 @@ on:
           - option1
           - option2
           - option3
+        default: option3
         description: a choice
       n1:
         type: number
@@ -20,6 +21,7 @@ on:
         description: a string
       b1:
         type: boolean
+        default: false
 jobs:
   build:
     steps:
