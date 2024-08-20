@@ -22,6 +22,7 @@ on:
       b1:
         type: boolean
         default: false
+        required: true
 jobs:
   build:
     steps:
