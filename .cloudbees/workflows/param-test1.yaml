@@ -22,7 +22,7 @@ on:
         default: hello
       b1:
         type: boolean
-        default: false
+        default: true
 jobs:
   build:
     steps:
