@@ -22,8 +22,7 @@ on:
         default: hello
       b1:
         type: boolean
-        default: false
-        required: true
+        default: true
 jobs:
   build:
     steps:
