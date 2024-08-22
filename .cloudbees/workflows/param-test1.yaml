@@ -5,7 +5,12 @@ on:
   workflow_dispatch:
     inputs:
       c1:
-        type: string
+        type: choice
+        options:
+          - option1
+          - option2
+          - option3
+        default: option2
         description: a choice
       n1:
         type: number
