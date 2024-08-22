@@ -17,8 +17,7 @@ on:
         default: 2
         description: a number
       s1:
-        type: string
-        default: hello
+        type: boolean
         description: a string
       b1:
         type: boolean
