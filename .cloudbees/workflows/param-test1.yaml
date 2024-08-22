@@ -8,19 +8,19 @@ on:
         type: choice
         options:
           - option1
+          - option2
           - option3
-          - option4
         description: a choice
-        default: option4
+        default: option3
       n1:
         type: number
         default: 2
         description: a number
       s1:
-        type: boolean
+        type: string
         description: a string
       b1:
-        type: number
+        type: boolean
 jobs:
   build:
     steps:
