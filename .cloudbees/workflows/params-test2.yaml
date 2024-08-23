@@ -22,7 +22,7 @@ on:
         description: a number
       s1:
         type: string
-        default: hello world2
+        default: hello world1
         required: true
         description: a string
 jobs:
