@@ -22,7 +22,12 @@ on:
         description: a number
       s1:
         type: string
-        default: hello world
+        default: |
+          hello world
+          hello world
+          hello world
+          hello world
+          hello world
         required: true
         description: a string
 jobs:
