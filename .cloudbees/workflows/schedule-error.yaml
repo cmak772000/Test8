@@ -3,7 +3,7 @@ kind: workflow
 name: schedule error
 on:
   schedule:
-    - cron: 0 * * * *
+    - cron: 1234 * * * *
 jobs:
   build:
     steps:
