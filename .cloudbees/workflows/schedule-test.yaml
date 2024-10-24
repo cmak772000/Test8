@@ -3,7 +3,7 @@ kind: workflow
 name: Schedule Test
 on:
   schedule:
-    - cron: abcdef 5 * * *
+    - cron: 1234 5 * * *
 jobs:
   build:
     steps:
