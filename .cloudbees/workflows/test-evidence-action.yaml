@@ -10,7 +10,7 @@ jobs:
         name: Wait
         shell: sh
         run: |
-          sleep 300
+          sleep 120
   evidence:
     steps:
       - uses: cloudbees-io/publish-evidence-item
