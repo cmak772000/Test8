@@ -6,8 +6,15 @@ on:
 jobs:
   build:
     steps:
-      - name: Evidence markdown examples
-        uses: cloudbees-io/publish-evidence-item
+      - uses: docker://golang:1.20.3-alpine3.17
+        name: Wiat
+        shell: sh
+        run: |
+          sleep 300
+  evidence:
+    steps:
+      - uses: cloudbees-io/publish-evidence-item
+        name: Evidence markdown examples
         with:
           content: |
             ## Test markup and property rendering
@@ -44,12 +51,4 @@ jobs:
             - ~~strike through~~
 
             ![Sonny and Mariel high fiving.](https://content.codecademy.com/courses/learn-cpp/community-challenge/highfive.gif)
-    needs:
-      - Approval
-  Approval:
-    timeout-minutes: 60
-    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
-    with:
-      approvers: 4bc37dfe-459a-11ed-a6a3-42010a83ae66
-      disallowLaunchByUser: false
-      instructions: ""
+    needs: build
