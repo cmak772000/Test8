@@ -21,7 +21,6 @@ on:
         description: a string
       b1:
         type: boolean
-        default: false
 jobs:
   build:
     steps:
