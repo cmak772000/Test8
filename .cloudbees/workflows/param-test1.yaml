@@ -10,8 +10,8 @@ on:
           - option1
           - option2
           - option3
-        description: a choice
         default: option3
+        description: a choice
       n1:
         type: number
         default: 2
@@ -21,6 +21,8 @@ on:
         description: a string
       b1:
         type: boolean
+        default: false
+        required: true
 jobs:
   build:
     steps:
